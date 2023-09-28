@@ -14,14 +14,14 @@
         android:layout_marginStart="93dp"
         android:layout_marginEnd="93dp"
         android:layout_marginBottom="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/txtRegisterForAccess"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/shseguro" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtRegisterForAccess"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -47,7 +47,7 @@
         app:layout_constraintBottom_toTopOf="@+id/Domicilio"
         app:layout_constraintEnd_toStartOf="@+id/Apellido"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView">
+        app:layout_constraintTop_toBottomOf="@id/txtRegisterForAccess">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
         app:layout_constraintBottom_toTopOf="@+id/Domicilio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Nombre"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterForAccess">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -170,7 +170,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/Registrarse"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Contraseña">
@@ -184,7 +184,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/Registrarse"
+        android:id="@+id/btnRegistrarse"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
