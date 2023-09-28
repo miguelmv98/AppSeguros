@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#EC6237</color>
     <color name="buttonGray">#FF474747</color>
+    <color name="textGray">#818181</color>
+    <color name="profileBanner">#D18F7B</color>
+    <color name="genericButton">#D6D6D6</color>
 </resources>
