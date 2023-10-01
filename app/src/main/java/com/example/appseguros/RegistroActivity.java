@@ -7,15 +7,19 @@ import android.os.Bundle;
 import android.widget.Button;
 
 public class RegistroActivity extends AppCompatActivity {
-    Button registerButton;
+    Button signinButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registro);
-        registerButton = findViewById(R.id.Registrarse);
-        registerButton.setOnClickListener(v -> {
-            Intent intent = new Intent(this,AltaBricolajeActivity.class);
+        setContentView(R.layout.activity_registro);
+
+
+        signinButton = findViewById(R.id.btnRegistrarse);
+        signinButton.setOnClickListener(v -> {
+            Intent intent = new Intent(RegistroActivity.this,HomeActivity.class);
             startActivity(intent);
         });
+
     }
 }
