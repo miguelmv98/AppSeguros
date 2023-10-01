@@ -16,7 +16,7 @@ public class AltaBricolajeActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alta_bricolaje);
 
-        String[] type = new String[] {"Bed-sitter", "Single", "1- Bedroom"};
+        String[] type = new String[] {"Electricidad", "Carpintería", "Fontanería"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
