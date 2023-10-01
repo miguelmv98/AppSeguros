@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".RegistroActivity" /></activity>
+        <activity android:name=".RegistroActivity" />
         <activity android:name=".AltaBricolajeActivity" ></activity>
         <activity android:name=".InicioSesionActivity"></activity>
         <activity android:name=".HomeActivity"></activity>
