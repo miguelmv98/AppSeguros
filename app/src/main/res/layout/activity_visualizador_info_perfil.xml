@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="93dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shseguro" />
+
+    <View
+        android:id="@+id/visualizadorInfoPerfilView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="#B4D6D6D6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+    <TextView
+        android:id="@+id/textEnConstruccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif"
+        android:text="En Construcción"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintTop_toTopOf="@+id/visualizadorInfoPerfilView" />
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Nombre:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintTop_toBottomOf="@+id/textEnConstruccion" />
+
+    <TextView
+        android:id="@+id/textApellidos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Apellidos:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintTop_toBottomOf="@+id/textNombre" />
+
+    <TextView
+        android:id="@+id/textDomicilio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Domicilio:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintTop_toBottomOf="@+id/textApellidos" />
+
+    <TextView
+        android:id="@+id/textDNI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif"
+        android:text="DNI:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintTop_toBottomOf="@+id/textDomicilio" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Correo electrónico:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintTop_toBottomOf="@+id/textDNI" />
+
+    <TextView
+        android:id="@+id/textCuentaBancaria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Cuenta bancaria:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homeButtonVisualizador"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visualizadorInfoPerfilView">
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtInicioSiniestro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
+
+        <TextView
+            android:id="@+id/txtInicioSiniestro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:text="Inicio"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHome" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

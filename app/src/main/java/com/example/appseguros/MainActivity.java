@@ -10,6 +10,10 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     Button registerButton;
     Button loginButton;
+
+    Button altaSiniestroButton;
+    Button altaBricolajeButton;
+    Button cambiarDatosUsuarioButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +27,24 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.login);
         loginButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this,InicioSesionActivity.class);
+            startActivity(intent);
+        });
+
+        altaSiniestroButton = findViewById(R.id.altaSiniestroMainButton);
+        altaSiniestroButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this,AltaSiniestroActivity.class);
+            startActivity(intent);
+        });
+
+        altaBricolajeButton = findViewById(R.id.altaBricolajeMainButton);
+        altaBricolajeButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this,AltaBricolajeActivity.class);
+            startActivity(intent);
+        });
+
+        cambiarDatosUsuarioButton = findViewById(R.id.actualizarPerfilMainButton);
+        cambiarDatosUsuarioButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this,ActualizarPerfilActivity.class);
             startActivity(intent);
         });
     }
