@@ -25,9 +25,9 @@ public class VisualizadorDatosPerfilActivity extends AppCompatActivity {
         String mensajeBanco=intent.getStringExtra("ClaveCuentaBancaria");
 
 
-        ((TextView)findViewById(R.id.textNombre)).setText("Nombre: "+mensajeNombre);
-        ((TextView)findViewById(R.id.textApellidos)).setText("Apellidos: "+mensajeApellidos);
-        ((TextView)findViewById(R.id.textDomicilio)).setText("Domicilio: "+mensajeDomicilio);
+        ((TextView)findViewById(R.id.textTipo)).setText("Nombre: "+mensajeNombre);
+        ((TextView)findViewById(R.id.textDomicilio)).setText("Apellidos: "+mensajeApellidos);
+        ((TextView)findViewById(R.id.textDescripcion)).setText("Domicilio: "+mensajeDomicilio);
         ((TextView)findViewById(R.id.textDNI)).setText("DNI: "+mensajeDNI);
         ((TextView)findViewById(R.id.textEmail)).setText("Correo electrónico: "+mensajeCorreo);
         ((TextView)findViewById(R.id.textCuentaBancaria)).setText("Cuenta bancaria: "+mensajeBanco);
