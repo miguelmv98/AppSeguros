@@ -22,7 +22,7 @@ public class PerfilActivity extends AppCompatActivity {
 
         cerrarSesionButton = findViewById(R.id.CerrarSesionButton);
         cerrarSesionButton.setOnClickListener(v -> {
-            Intent intent = new Intent(PerfilActivity.this,HomeActivity.class);
+            Intent intent = new Intent(PerfilActivity.this,MainActivity.class);
             startActivity(intent);
         });
     }
