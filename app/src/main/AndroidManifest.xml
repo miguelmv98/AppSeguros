@@ -25,6 +25,11 @@
         <activity android:name=".InicioSesionActivity"></activity>
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".AltaBricolajeActivity"></activity>
+        <activity android:name=".ActualizarPerfilActivity"></activity>
+        <activity android:name=".PerfilActivity"></activity>
+        <activity android:name=".AltaSiniestroActivity"></activity>
+        <activity android:name=".VisualizadorDatosPerfilActivity"></activity>
+
     </application>
 
 </manifest>
