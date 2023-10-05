@@ -38,7 +38,7 @@ public class AltaBricolajeActivity extends AppCompatActivity  {
             }
         });
 
-        homeButton = findViewById(R.id.homeButtonSiniestro);
+        homeButton = findViewById(R.id.homeButtonBricolaje);
         homeButton.setOnClickListener(v -> {
             Intent intent = new Intent(this,HomeActivity.class);
             startActivity(intent);
