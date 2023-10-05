@@ -10,6 +10,7 @@ public class HomeActivity extends AppCompatActivity {
 
     androidx.constraintlayout.widget.ConstraintLayout altaBricolajeButton;
     androidx.constraintlayout.widget.ConstraintLayout altaSiniestroButton;
+    androidx.constraintlayout.widget.ConstraintLayout HistorialButton;
 
     ImageView profilePic;
 
@@ -27,6 +28,12 @@ public class HomeActivity extends AppCompatActivity {
         altaSiniestroButton = findViewById(R.id.gestionSiniestro);
         altaSiniestroButton.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this,AltaSiniestroActivity.class);
+            startActivity(intent);
+        });
+
+        HistorialButton = findViewById(R.id.historialSolicitudes);
+        HistorialButton.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this,HistorialBricolajeActivity.class);
             startActivity(intent);
         });
 
