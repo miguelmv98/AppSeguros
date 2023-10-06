@@ -1,9 +1,0 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.AppSeguros" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <item name="colorPrimary">@color/orange</item>
-        <item name="colorButtonNormal">@color/buttonGray</item>
-        <item name="textAppearanceButton">@color/white</item>
-    </style>
-</resources>
