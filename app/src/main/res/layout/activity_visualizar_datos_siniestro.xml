@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    tools:context=".VisualizarDatosSiniestroAcitivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageLogo"
         android:layout_width="0dp"
         android:layout_height="190dp"
         android:layout_marginStart="93dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/shseguro" />
 
     <View
-        android:id="@+id/visualizadorInfoPerfilView"
+        android:id="@+id/visualizadorInfoSiniestroView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
@@ -29,7 +29,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@id/imageLogo" />
 
     <TextView
         android:id="@+id/textSiniestro"
@@ -39,29 +39,29 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="sans-serif"
-        android:text="En Construcción"
+        android:text="Alta Siniestro"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintTop_toTopOf="@+id/visualizadorInfoPerfilView" />
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintTop_toTopOf="@+id/visualizadorInfoSiniestroView" />
 
     <TextView
-        android:id="@+id/textTipo"
+        android:id="@+id/textDomicilio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="sans-serif"
-        android:text="Nombre:"
+        android:text="Domicilio:"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
         app:layout_constraintTop_toBottomOf="@+id/textSiniestro" />
 
     <TextView
@@ -72,13 +72,13 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="sans-serif"
-        android:text="Apellidos:"
+        android:text="Descripcion:"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintTop_toBottomOf="@+id/textTipo" />
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintTop_toBottomOf="@+id/textDomicilio" />
 
     <TextView
         android:id="@+id/textFecha"
@@ -88,64 +88,31 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="sans-serif"
-        android:text="Domicilio:"
+        android:text="Fecha:"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
         app:layout_constraintTop_toBottomOf="@+id/textDescripcion" />
 
+
     <TextView
-        android:id="@+id/textDNI"
+        android:id="@+id/textHora"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="sans-serif"
-        android:text="DNI:"
+        android:text="Hora:"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
         app:layout_constraintTop_toBottomOf="@+id/textFecha" />
-
-    <TextView
-        android:id="@+id/textEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="15dp"
-        android:fontFamily="sans-serif"
-        android:text="Correo electrónico:"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintTop_toBottomOf="@+id/textDNI" />
-
-    <TextView
-        android:id="@+id/textCuentaBancaria"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="15dp"
-        android:fontFamily="sans-serif"
-        android:text="Cuenta bancaria:"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
-
-
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/homeButtonVisualizador"
@@ -159,7 +126,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/visualizadorInfoPerfilView">
+        app:layout_constraintTop_toBottomOf="@+id/visualizadorInfoSiniestroView">
 
         <ImageView
             android:id="@+id/imgHome"
@@ -187,8 +154,4 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgHome" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout></androidx.constraintlayout.widget.ConstraintLayout>

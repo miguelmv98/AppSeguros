@@ -8,5 +8,24 @@
         <item name="backgroundColor">@color/white</item>
     </style>
 
+    <style name="addButton">
+        <item name = "android:backgroundTint">@color/buttonGray</item>
+        <item name = "android:onClick">onClick</item>
+        <item name = "android:textColor">@color/white</item>
+    </style>
+
+    <style name="cancelButton">
+        <item name = "android:backgroundTint">@color/noColor</item>
+        <item name = "android:textColor">@color/black</item>
+    </style>
+
+    <style name="historySelectionButton">
+        <item name = "android:backgroundTint">@color/orange</item>
+        <item name = "android:onClick">onClick</item>
+        <item name = "android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="Theme.AppSeguros" parent="Base.Theme.AppSeguros" />
 </resources>

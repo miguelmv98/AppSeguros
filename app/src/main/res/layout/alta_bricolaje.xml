@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/viewSiniestro"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
@@ -48,8 +48,8 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
+        app:layout_constraintTop_toTopOf="@+id/viewSiniestro" />
 
 
     <TextView
@@ -59,7 +59,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:text="Servicios disponibles: 3"
-        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
         app:layout_constraintTop_toBottomOf="@+id/solicitudes" />
 
 
@@ -72,8 +72,8 @@
         android:layout_marginEnd="15dp"
         app:boxBackgroundMode="filled"
         app:boxBackgroundColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/viewSiniestro"
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
         app:layout_constraintTop_toBottomOf="@+id/tipo">
 
 
@@ -95,8 +95,8 @@
         android:layout_marginEnd="15dp"
         app:boxBackgroundMode="filled"
         app:boxBackgroundColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/viewSiniestro"
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
         app:layout_constraintTop_toBottomOf="@+id/Domicilio">
 
 
@@ -117,13 +117,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/buttonGray"
-        android:onClick="onClick"
-        android:text="Agregar"
-        android:textColor="@color/white"
         app:cornerRadius="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2"
+        style="@style/addButton"
+        android:text="@string/texto_boton_agregar"
+        app:layout_constraintEnd_toEndOf="@+id/viewSiniestro"
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
         app:layout_constraintTop_toBottomOf="@+id/Descripcion" />
 
 
@@ -134,16 +132,15 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="#00FFFFFF"
-        android:text="Cancelar"
-        android:textColor="@color/black"
+        android:text="@string/texto_boton_cancelar"
+        style="@style/cancelButton"
         app:cornerRadius="8dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/viewSiniestro"
         app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/Agregar" />
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
+        app:layout_constraintTop_toBottomOf="@+id/Agregar"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -156,8 +153,8 @@
         android:hint="tipo"
         app:boxBackgroundMode="filled"
         app:boxBackgroundColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/viewSiniestro"
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <AutoCompleteTextView
@@ -182,7 +179,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2">
+        app:layout_constraintTop_toBottomOf="@+id/viewSiniestro">
 
         <ImageView
             android:id="@+id/imgHome"

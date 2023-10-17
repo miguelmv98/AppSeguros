@@ -7,7 +7,7 @@
     tools:context=".VisualizarDatosBricolajeActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageLogo"
         android:layout_width="0dp"
         android:layout_height="190dp"
         android:layout_marginStart="93dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/shseguro" />
 
     <View
-        android:id="@+id/visualizadorInfoPerfilView"
+        android:id="@+id/visualizadorInfoSiniestroView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
@@ -29,10 +29,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@id/imageLogo" />
 
     <TextView
-        android:id="@+id/textBricolaje"
+        android:id="@+id/textSiniestro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -44,9 +44,9 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintTop_toTopOf="@+id/visualizadorInfoPerfilView" />
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintTop_toTopOf="@+id/visualizadorInfoSiniestroView" />
 
     <TextView
         android:id="@+id/textTipo"
@@ -60,12 +60,12 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintTop_toBottomOf="@+id/textBricolaje" />
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintTop_toBottomOf="@+id/textSiniestro" />
 
     <TextView
-        android:id="@+id/textDomicilio"
+        android:id="@+id/textDescripcion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -76,12 +76,12 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
         app:layout_constraintTop_toBottomOf="@+id/textTipo" />
 
     <TextView
-        android:id="@+id/textDescripcion"
+        android:id="@+id/textFecha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -92,9 +92,9 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoPerfilView"
-        app:layout_constraintTop_toBottomOf="@+id/textDomicilio" />
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintTop_toBottomOf="@+id/textDescripcion" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -109,7 +109,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/visualizadorInfoPerfilView">
+        app:layout_constraintTop_toBottomOf="@+id/visualizadorInfoSiniestroView">
 
         <ImageView
             android:id="@+id/imgHome"
