@@ -28,7 +28,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="80dp"
-        android:text="Regístrate para poder tener soporte"
+        android:text="@string/mensaje_registro"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -53,7 +53,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Nombre"
+            android:hint="@string/nombre"
             android:textColor="@color/black"
             android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -74,7 +74,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Apellido"
+            android:hint="@string/apellido"
             android:textColor="@color/black"
             android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -95,7 +95,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Domicilio"
+            android:hint="@string/domicilio"
             android:textColor="@color/black"
             android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -116,7 +116,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="DNI"
+            android:hint="@string/dni"
             android:textColor="@color/black"
             android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -137,7 +137,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Email"
+            android:hint="@string/email"
             android:textColor="@color/black"
             android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -159,7 +159,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Contraseña"
+            android:hint="@string/contrasenha"
             android:inputType="textPassword"
             android:textColor="@color/black"
             android:textSize="12sp" />
@@ -181,7 +181,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Cuenta de Banco"
+            android:hint="@string/cuenta_de_banco"
             android:textColor="@color/black"
             android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -195,7 +195,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/buttonGray"
-        android:text="Registrarse"
+        android:text="@string/registrarse"
         android:textColor="@color/white"
         app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"

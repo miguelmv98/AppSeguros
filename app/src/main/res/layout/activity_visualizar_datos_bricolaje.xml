@@ -39,7 +39,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="sans-serif"
-        android:text="Alta Bricolaje"
+        android:text="@string/alta_bricolaje"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -56,13 +56,29 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="sans-serif"
-        android:text="Tipo:"
+        android:text="@string/tipo_dobles_puntos"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
         app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
         app:layout_constraintTop_toBottomOf="@+id/textSiniestro" />
+
+    <TextView
+        android:id="@+id/textDomicilio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/domicilio_dobles_puntos"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
+        app:layout_constraintTop_toBottomOf="@+id/textTipo" />
 
     <TextView
         android:id="@+id/textDescripcion"
@@ -72,29 +88,13 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="sans-serif"
-        android:text="Domicilio:"
+        android:text="@string/descripcion_dobles_puntos"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
         app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
-        app:layout_constraintTop_toBottomOf="@+id/textTipo" />
-
-    <TextView
-        android:id="@+id/textFecha"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="15dp"
-        android:fontFamily="sans-serif"
-        android:text="Descripcion:"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/visualizadorInfoSiniestroView"
-        app:layout_constraintStart_toStartOf="@+id/visualizadorInfoSiniestroView"
-        app:layout_constraintTop_toBottomOf="@+id/textDescripcion" />
+        app:layout_constraintTop_toBottomOf="@+id/textDomicilio" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -129,7 +129,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            android:text="Inicio"
+            android:text="@string/inicio"
             android:textAlignment="center"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"

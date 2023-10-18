@@ -8,7 +8,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/profileBanner"
+        android:id="@+id/homeProfileBanner"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:background="@color/profileBanner"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/profilePick"
+            android:id="@+id/homeProfilePick"
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginTop="8dp"
@@ -29,7 +29,7 @@
             app:srcCompat="@drawable/ic_launcher_background"
             tools:srcCompat="@drawable/rounded_home_header" />
         <TextView
-            android:id="@+id/txtHola"
+            android:id="@+id/txtHomeHola"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -50,18 +50,18 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="150dp"
-            android:text="¿Cómo te podemos ayudar hoy?"
+            android:text="@string/pregunta_home_como_ayudar"
             android:textColor="@color/buttonGray"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtHola" />
+            app:layout_constraintTop_toBottomOf="@+id/txtHomeHola" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/gestionSiniestro"
+        android:id="@+id/homeGestionSiniestro"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginStart="30dp"
@@ -74,29 +74,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileBanner">
+        app:layout_constraintTop_toBottomOf="@+id/homeProfileBanner">
 
         <ImageView
-            android:id="@+id/imgHome"
+            android:id="@+id/homeImgHome"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginStart="60dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="60dp"
-            app:layout_constraintBottom_toTopOf="@+id/txtGestionSiniestro"
+            app:layout_constraintBottom_toTopOf="@+id/txtHomeGestionSiniestro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/home" />
 
         <TextView
-            android:id="@+id/txtGestionSiniestro"
+            android:id="@+id/txtHomeGestionSiniestro"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
-            android:text="Gestionar siniestros en el hogar"
+            android:text="@string/txt_home_gestionar_siniestros"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -104,7 +104,7 @@
             app:layout_constraintBottom_toTopOf="@+id/txtDescripcionGestionSiniestro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgHome" />
+            app:layout_constraintTop_toBottomOf="@+id/homeImgHome" />
 
         <TextView
             android:id="@+id/txtDescripcionGestionSiniestro"
@@ -113,14 +113,14 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="2dp"
-            android:text="Da de alta un siniestro"
+            android:text="@string/home_dar_alta_siniestro"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtGestionSiniestro" />
+            app:layout_constraintTop_toBottomOf="@+id/txtHomeGestionSiniestro" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -139,7 +139,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gestionSiniestro">
+        app:layout_constraintTop_toBottomOf="@+id/homeGestionSiniestro">
 
         <ImageView
             android:id="@+id/imgSettings"
@@ -160,7 +160,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
-            android:text="Gestionar un servicio de bricolaje"
+            android:text="@string/home_gestionar_servicio_bricolaje"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -177,7 +177,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="2dp"
-            android:text="Da de alta el servicio que deseas"
+            android:text="@string/home_dar_alta_servicio_bricolaje"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="14sp"
@@ -223,7 +223,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
-            android:text="Historial de solicitudes"
+            android:text="@string/home_historial_solicitudes"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -240,7 +240,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="2dp"
-            android:text="Visualiza el estado de tu solicitud"
+            android:text="@string/home_visualizar_estado_solicitud"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="14sp"

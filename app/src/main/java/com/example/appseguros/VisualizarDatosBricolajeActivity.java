@@ -22,8 +22,8 @@ public class VisualizarDatosBricolajeActivity extends AppCompatActivity {
 
 
         ((TextView)findViewById(R.id.textTipo)).setText("Nombre: "+ mensajeTipo);
-        ((TextView)findViewById(R.id.textDescripcion)).setText("Domicilio: "+ mensajeDomicilio);
-        ((TextView)findViewById(R.id.textFecha)).setText("Descripcion: "+ mensajeDescripcion);
+        ((TextView)findViewById(R.id.textDomicilio)).setText("Domicilio: "+ mensajeDomicilio);
+        ((TextView)findViewById(R.id.textDescripcion)).setText("Descripcion: "+ mensajeDescripcion);
 
         homeButton = findViewById(R.id.homeButtonVisualizador);
         homeButton.setOnClickListener(v -> {

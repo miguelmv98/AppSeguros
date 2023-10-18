@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -17,13 +18,19 @@ import com.google.android.material.textfield.TextInputLayout;
 public class AltaBricolajeActivity extends AppCompatActivity  {
 
     androidx.constraintlayout.widget.ConstraintLayout homeButton;
-
     Button cancelar;
+
+    private TextView backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alta_bricolaje);
+
+        backButton = findViewById(R.id.textAtrasBricolaje);
+        backButton.setOnClickListener(v -> {
+            this.finish();
+        });
 
         Resources res = getResources();
         String[] types = res.getStringArray(R.array.types);

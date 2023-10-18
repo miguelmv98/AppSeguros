@@ -10,7 +10,6 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     Button registerButton;
     Button loginButton;
-
     Button altaSiniestroButton;
     Button altaBricolajeButton;
     Button cambiarDatosUsuarioButton;

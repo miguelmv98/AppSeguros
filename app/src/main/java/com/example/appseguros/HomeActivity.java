@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        altaSiniestroButton = findViewById(R.id.gestionSiniestro);
+        altaSiniestroButton = findViewById(R.id.homeGestionSiniestro);
         altaSiniestroButton.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this,AltaSiniestroActivity.class);
             startActivity(intent);
@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        profilePic = findViewById(R.id.profilePick);
+        profilePic = findViewById(R.id.homeProfilePick);
         profilePic.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this,PerfilActivity.class);
             startActivity(intent);

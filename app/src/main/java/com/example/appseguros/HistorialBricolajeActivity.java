@@ -5,16 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class HistorialBricolajeActivity extends AppCompatActivity {
 
     androidx.constraintlayout.widget.ConstraintLayout homeButton;
     Button historialSiniestroButton;
     Button historialBricolajeButton;
+    private TextView backButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historial_bricolaje);
+
+        backButton = findViewById(R.id.textAtrasHistorialBricolaje);
+        backButton.setOnClickListener(v -> {
+            this.finish();
+        });
 
         homeButton = findViewById(R.id.homeButtonBricolaje);
         homeButton.setOnClickListener(v -> {
