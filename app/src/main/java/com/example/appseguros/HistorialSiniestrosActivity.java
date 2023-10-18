@@ -6,17 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class HistorialBricolajeActivity extends AppCompatActivity {
-
+public class HistorialSiniestrosActivity extends AppCompatActivity {
     androidx.constraintlayout.widget.ConstraintLayout homeButton;
     Button historialSiniestroButton;
     Button historialBricolajeButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_historial_bricolaje);
+        setContentView(R.layout.activity_historial_siniestros);
 
-        homeButton = findViewById(R.id.homeButtonBricolaje);
+        homeButton = findViewById(R.id.homeButtonSiniestro);
         homeButton.setOnClickListener(v -> {
             Intent intent = new Intent(this,HomeActivity.class);
             startActivity(intent);

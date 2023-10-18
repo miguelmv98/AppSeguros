@@ -3,11 +3,13 @@ package com.example.appseguros;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -15,17 +17,21 @@ import com.google.android.material.textfield.TextInputLayout;
 public class AltaBricolajeActivity extends AppCompatActivity  {
 
     androidx.constraintlayout.widget.ConstraintLayout homeButton;
+
+    Button cancelar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alta_bricolaje);
 
-        String[] type = new String[] {"Electricidad", "Carpintería", "Fontanería"};
+        Resources res = getResources();
+        String[] types = res.getStringArray(R.array.types);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
                 R.layout.dropdown_item,
-                type
+                types
         );
 
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.filled_exposed);
@@ -40,6 +46,12 @@ public class AltaBricolajeActivity extends AppCompatActivity  {
 
         homeButton = findViewById(R.id.homeButtonBricolaje);
         homeButton.setOnClickListener(v -> {
+            Intent intent = new Intent(this,HomeActivity.class);
+            startActivity(intent);
+        });
+
+        cancelar = findViewById(R.id.CancelarBricolaje);
+        cancelar.setOnClickListener(v -> {
             Intent intent = new Intent(this,HomeActivity.class);
             startActivity(intent);
         });

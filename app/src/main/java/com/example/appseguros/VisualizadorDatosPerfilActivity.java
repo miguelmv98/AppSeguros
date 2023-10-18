@@ -26,8 +26,8 @@ public class VisualizadorDatosPerfilActivity extends AppCompatActivity {
 
 
         ((TextView)findViewById(R.id.textTipo)).setText("Nombre: "+mensajeNombre);
-        ((TextView)findViewById(R.id.textDomicilio)).setText("Apellidos: "+mensajeApellidos);
-        ((TextView)findViewById(R.id.textDescripcion)).setText("Domicilio: "+mensajeDomicilio);
+        ((TextView)findViewById(R.id.textDescripcion)).setText("Apellidos: "+mensajeApellidos);
+        ((TextView)findViewById(R.id.textFecha)).setText("Domicilio: "+mensajeDomicilio);
         ((TextView)findViewById(R.id.textDNI)).setText("DNI: "+mensajeDNI);
         ((TextView)findViewById(R.id.textEmail)).setText("Correo electrónico: "+mensajeCorreo);
         ((TextView)findViewById(R.id.textCuentaBancaria)).setText("Cuenta bancaria: "+mensajeBanco);

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".HistorialBricolajeActivity">
+    tools:context=".HistorialSiniestrosActivity">
 
     <TextView
-        android:id="@+id/textAtrasBricolaje"
+        android:id="@+id/textAtrasSiniestro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/viewBricolaje"
+        android:id="@+id/viewSiniestro"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <View
-        android:id="@+id/viewItemBricolaje"
+        android:id="@+id/viewItemSiniestro"
         android:layout_width="0dp"
         android:layout_height="97dp"
         android:layout_marginStart="37dp"
@@ -50,7 +50,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/estatusBricolaje"
+        android:id="@+id/estatusSiniestro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -59,33 +59,34 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/botonSiniestros"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="175dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/navegacion_siniestro"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:cornerRadius="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/viewBricolaje"
-        app:layout_constraintStart_toStartOf="@+id/viewBricolaje"
-        app:layout_constraintTop_toBottomOf="@+id/solicitudes" />
-
-    <Button
         android:id="@+id/botonBricolaje"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="160dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="17dp"
+        android:backgroundTint="@color/white"
+        android:onClick="onClick"
         android:text="@string/navegacion_bricolaje"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewSiniestro"
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
+        app:layout_constraintTop_toBottomOf="@+id/solicitudes" />
+
+    <Button
+        android:id="@+id/botonSiniestros"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="175dp"
+        android:text="@string/navegacion_siniestro"
         style="@style/historySelectionButton"
         app:cornerRadius="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/viewBricolaje"
-        app:layout_constraintStart_toStartOf="@+id/viewBricolaje"
+        app:layout_constraintEnd_toEndOf="@+id/viewSiniestro"
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
         app:layout_constraintTop_toBottomOf="@+id/solicitudes" />
 
     <TextView
@@ -100,12 +101,12 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/viewBricolaje"
+        app:layout_constraintStart_toStartOf="@+id/viewSiniestro"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/homeButtonBricolaje"
+        android:id="@+id/homeButtonSiniestro"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
@@ -122,14 +123,14 @@
             android:layout_height="30dp"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            app:layout_constraintBottom_toTopOf="@+id/txtInicioBricolaje"
+            app:layout_constraintBottom_toTopOf="@+id/txtInicioSiniestro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/home" />
 
         <TextView
-            android:id="@+id/txtInicioBricolaje"
+            android:id="@+id/txtInicioSiniestro"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
@@ -150,8 +151,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/viewItemBricolaje"
-        app:layout_constraintTop_toTopOf="@+id/viewItemBricolaje"
+        app:layout_constraintStart_toStartOf="@+id/viewItemSiniestro"
+        app:layout_constraintTop_toTopOf="@+id/viewItemSiniestro"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <TextView
@@ -164,6 +165,6 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/viewItemBricolaje" />
+        app:layout_constraintTop_toTopOf="@+id/viewItemSiniestro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">AppSeguros</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string-array name="types">
+        <item>Electricidad</item>
+        <item>Carpintería</item>
+        <item>Fontanería</item>
+    </string-array>
+    <string name="titulo_historial">Solicitudes</string>
+    <string name="texto_boton_agregar">Agregar</string>
+    <string name="texto_boton_cancelar">Cancelar</string>
+    <string name="navegacion_siniestro">Siniestro</string>
+    <string name="navegacion_bricolaje">Bricolaje</string>
 </resources>
